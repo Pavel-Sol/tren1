@@ -1,0 +1,30 @@
+.container {
+  max-width: 800px;
+  padding: 0 15px;
+  margin: 0px auto;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  font-size: 40px;
+}
+
+.btn-modal-1 {
+  padding: 20px 40px;
+  font-size: 25px;
+
+  background-color: blueviolet;
+}
+
+.btn-modal-2 {
+  padding: 20px 40px;
+  font-size: 25px;
+
+  background-color: rgb(78, 235, 30);
+}
+
+.btn-modal-3 {
+  padding: 20px 40px;
+  font-size: 25px;
+
+  background-color: rgba(25, 19, 110, 1);
+  color: aliceblue;
+}
