@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tren1/static/css/main.19e8df5f.css",
+    "main.js": "/tren1/static/js/main.73c97e31.js",
+    "static/js/787.7e7ab836.chunk.js": "/tren1/static/js/787.7e7ab836.chunk.js",
+    "static/media/logo.svg": "/tren1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tren1/index.html",
+    "main.19e8df5f.css.map": "/tren1/static/css/main.19e8df5f.css.map",
+    "main.73c97e31.js.map": "/tren1/static/js/main.73c97e31.js.map",
+    "787.7e7ab836.chunk.js.map": "/tren1/static/js/787.7e7ab836.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19e8df5f.css",
+    "static/js/main.73c97e31.js"
+  ]
+}
