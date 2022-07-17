@@ -6,6 +6,9 @@
   border-right: 1px solid gray;
   font-size: 40px;
 }
+h1 {
+  margin-top: 0;
+}
 
 .btn-modal-1 {
   padding: 20px 40px;
@@ -26,5 +29,13 @@
   font-size: 25px;
 
   background-color: rgba(25, 19, 110, 1);
+  color: aliceblue;
+}
+
+.btn-menu {
+  padding: 20px 40px;
+  font-size: 25px;
+
+  background-color: rgb(250, 10, 50);
   color: aliceblue;
 }

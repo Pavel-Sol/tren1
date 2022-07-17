@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { useScrollPosition } from "../../useScroll";
+import Menu from "../Menu/Menu";
 import Modal1 from "../Modal1/Modal1";
 import Modal2 from "../Modal2/Modal2";
 import Modal3 from "../Modal3/Modal3";
@@ -51,7 +52,23 @@ const MainPage = () => {
       document.body.style.top = `${scrollTop}px`;
     } else {
       const scrollY = document.body.style.top;
-      console.log(scrollY);
+      // console.log(scrollY);
+      document.body.style.position = "";
+      document.body.style.top = "";
+
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    }
+  };
+
+  const [menu, setMenu] = useState(false);
+  const toggleMenu = (bool) => {
+    setMenu(bool);
+    if (bool) {
+      document.body.style.position = "fixed";
+      document.body.style.top = `${scrollTop}px`;
+    } else {
+      const scrollY = document.body.style.top;
+      // console.log(scrollY);
       document.body.style.position = "";
       document.body.style.top = "";
 
@@ -64,8 +81,12 @@ const MainPage = () => {
       <Modal1 visible={modal1} toggleModal1={toggleModal1} />
       <Modal2 visible={modal2} toggleModal2={toggleModal2} />
       <Modal3 visible={modal3} toggleModal3={toggleModal3} />
+      <Menu visible={menu} toggleMenu={toggleMenu} />
       <div className="container">
         <h1>HEADER</h1>
+        <button onClick={() => toggleMenu(true)} className="btn-menu">
+          open MENU!!!
+        </button>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque qui reprehenderit
           quis quod possimus consequuntur quaerat temporibus, eum iste, numquam aperiam repudiandae?

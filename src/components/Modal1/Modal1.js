@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Modal1.css";
 
 const Modal1 = ({ visible, toggleModal1 }) => {
+  useEffect(() => {
+    console.log("work Modal1");
+  }, []);
   if (!visible) {
     return null;
   }
