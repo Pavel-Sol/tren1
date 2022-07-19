@@ -48,9 +48,11 @@ const MainPage = () => {
   const toggleModal3 = (bool) => {
     setModal3(bool);
     if (bool) {
+      document.body.classList.add("lock3");
       document.body.style.position = "fixed";
       document.body.style.top = `${scrollTop}px`;
     } else {
+      document.body.classList.remove("lock1");
       const scrollY = document.body.style.top;
       // console.log(scrollY);
       document.body.style.position = "";

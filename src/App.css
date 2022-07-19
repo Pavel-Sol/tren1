@@ -5,12 +5,14 @@ body {
 
 body.lock1 {
   overflow-y: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
-/* body.lock3 {
-  overflow-y: hidden;
-  position: fixed;
-} */
+body.lock3 {
+  touch-action: none;
+  -ms-touch-action: none;
+}
 
 .App {
   text-align: center;
